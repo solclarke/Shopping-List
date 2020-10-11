@@ -1,23 +1,60 @@
-.coolTitle {
+/* Globals */
+body {
   text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 2% 4% 2% 8%;
+}
+
+li {
+  line-height: 2.5rem;
+}
+li:hover, button:hover {
+  cursor: pointer;
+}
+
+button {
+  margin: 0 5%;
+}
+
+/* Classes */
+.container {
+  margin: 10% 0 13%;
+}
 .done {
   text-decoration: line-through;
+}
+.list {
+  margin: 3% 35%;
+  border: solid black 2px;
+}
+.enter {
+  margin: 0;
+  padding: 10px;
+}
+.newShop {
+  margin: 2% 0;
+}
+/* ID's */
+#userInput {
+  padding: 10px;
+}
+
+/* Medias */
+@media (max-width: 650px) {
+  .container {
+    margin-top: 20%;
+  }
+  .list {
+    margin: 15% 20% 40%;
+  }
 }
